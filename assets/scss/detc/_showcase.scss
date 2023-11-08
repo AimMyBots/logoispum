@@ -1,0 +1,139 @@
+.showcase{
+    background: rgba(0, 0, 0, 0.5);
+    .cont{
+        padding: 16px 0 80px;
+        display: flex;
+        flex-direction: column;
+        .top{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            a:last-child{
+                color: var(--text-white, #FFF);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 200% */
+            }
+            a{
+                color: var(--text-disable, #E6E6E6);
+                font-family: 'Montserrat SemiBold', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 200% */
+            }
+        }
+        h1{
+            max-width: 650px;
+            margin-top: 64px !important;
+            color: var(--text-white, #FFF);
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: 'Rubik', sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 63.984px; /* 133.3% */
+        }
+        .stars{
+            margin-top: 28px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            h3{
+                color: var(--text-white, #FFF);
+                font-family: 'Rubik', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px; /* 133.333% */
+            }
+            p{
+                color: var(--text-disable, #E6E6E6);
+                font-family: 'Montserrat SemiBold', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 171.429% */
+            }
+        }
+        .logo{
+            margin-top: 53px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .circle{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #AAA;
+            }
+            h3{
+                color: var(--other-white, #FFF);
+                font-family: 'Rubik', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px; /* 133.333% */  
+            }
+        }
+        .buttons{
+            margin-top: 40px;
+            display: flex;
+            gap: 24px;
+            a:first-child{
+                padding: 12px 32px;
+                color: var(--other-white, #FFF);
+                font-family: 'Montserrat SemiBold', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 200% */
+                border-radius: 8px;
+                background: var(--primary-pink, #F72585);
+            }
+            a:last-child{
+                padding: 12px 32px;
+                color: var(--primary-pink, #F72585);
+                font-family: 'Montserrat SemiBold', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 200% */
+                border-radius: 8px;
+                background: var(--primary-20-pink, #FFF5F9);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px){
+    .showcase{
+        .cont{
+            .top{
+                flex-direction: column;
+                align-items: flex-start;
+                svg{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .showcase{
+        .cont{
+            .stars{
+                flex-direction: column;
+            }
+            .logo{
+                flex-direction: column;
+            }
+            .buttons{
+                flex-direction: column;
+            }
+        }
+    }
+}

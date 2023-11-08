@@ -1,0 +1,27 @@
+.pagin{
+    margin: 20px 0 160px;
+    .cont{
+        .pag{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            a:nth-child(2){
+                color: var(--text-white, #FFF);
+                border-radius: 4px;
+                background: var(--primary-pink, #F72585);
+            }
+            a{
+                width: 32px;
+                height: 32px;
+                color: var(--text-in-field, #CCC);
+                text-align: center;
+                font-family: 'Montserrat SemiBold', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 200% */
+            }
+        }
+    }
+}
